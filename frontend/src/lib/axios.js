@@ -1,16 +1,14 @@
 import axios from "axios";
 
- const api = axios.create({
-    baseURL: import.meta.env.MODE === 'development' ? 
-    'http://localhost:5000/api/notes' :
-    '/api',
+const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api" : "/api"
+
+const api = axios.create({
+    baseURL: `${BASE_URL}/notes`,
     withCredentials: true
 });
 
 export const authapi = axios.create({
-    baseURL: import.meta.env.MODE === 'development' ? 
-    'http://localhost:5000/api/' :
-    '/api',
+    baseURL: BASE_URL,
     withCredentials: true
 });
 

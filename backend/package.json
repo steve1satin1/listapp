@@ -39,9 +39,6 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js"
   },
-  "engines": {
-    "node": ">=22.19.0"
-  },
   "author": "Stergios Papadopoulos",
   "license": "ISC"
 }
