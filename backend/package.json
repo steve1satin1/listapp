@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "App List Api",
-  "main": "./src/server.js",
+  "main": "./src/index.js",
   "type": "module",
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -36,8 +36,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "author": "Stergios Papadopoulos",
   "license": "ISC"
