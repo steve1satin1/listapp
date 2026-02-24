@@ -1,0 +1,47 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "App List Api",
+  "main": "./src/server.js",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bson": "^7.1.1",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express-rate-limit": "^8.2.1",
+    "google-auth-library": "^10.5.0",
+    "jsonwebtoken": "^9.0.3",
+    "kareem": "^3.0.0",
+    "memory-pager": "^1.5.0",
+    "mongodb": "^7.0.0",
+    "mongodb-connection-string-url": "^7.0.0",
+    "mongoose": "^9.1.5",
+    "mpath": "^0.9.0",
+    "mquery": "^6.0.0",
+    "ms": "^2.1.3",
+    "nodemailer": "^8.0.1",
+    "otp-generator": "^4.0.1",
+    "punycode": "^2.3.1",
+    "sift": "^17.1.3",
+    "sparse-bitfield": "^3.0.3",
+    "tr46": "^5.1.1",
+    "webidl-conversions": "^7.0.0",
+    "whatwg-url": "^14.2.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.6",
+    "nodemon": "^3.1.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "author": "Stergios Papadopoulos",
+  "license": "ISC"
+}
