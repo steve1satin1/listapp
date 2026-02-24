@@ -131,7 +131,7 @@ export async function generateOtp(req, res) {
         // Send email with otp
         const transporter = nodemailer.createTransport({
             host: 'smtp-relay.brevo.com',
-            port: 587,
+            port: 2525,
             auth: {
                 user: process.env.BREVOLOGIN,
                 pass: process.env.BREVOKEY
