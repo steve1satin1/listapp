@@ -15,3 +15,7 @@ This a fullstack web application that lets you keep notes and deadlines.
 - Frontend: React + Vite,
 - Styling: Tailwind, lucid react, daisyui
 - Database: noSQL Mongodb with mongoose library,
+
+### Deployed [Here](https://listapp-wpuf.onrender.com/login_register)
+
+- Give it time to load because i used the free render tier.
