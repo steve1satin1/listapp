@@ -3,7 +3,7 @@ import { RegisterComp } from "./RegisterComp";
 
 export const LoginRegisterComp = ({ setIsLoggedIn }) => {
   return (
-    <div role="tablist" className="tabs tabs-lifted w-fit">
+    <div role="tablist" className="tabs tabs-lifted">
       <input
         type="radio"
         name="tab_choice"
@@ -14,7 +14,7 @@ export const LoginRegisterComp = ({ setIsLoggedIn }) => {
       />
       <div
         role="tabpanel"
-        className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+        className="tab-content bg-base-100 border-base-300 rounded-box md:p-6"
       >
         <LoginComp setIsLoggedIn={setIsLoggedIn} />
       </div>
@@ -28,7 +28,7 @@ export const LoginRegisterComp = ({ setIsLoggedIn }) => {
       />
       <div
         role="tabpanel"
-        className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+        className="tab-content bg-base-100 border-base-300 rounded-box md:p-6"
       >
         <RegisterComp />
       </div>

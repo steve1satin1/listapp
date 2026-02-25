@@ -83,7 +83,7 @@ export const HomePage = ({ isLoggedIn }) => {
               notes.map((note, index) => (
                 <div
                   key={index}
-                  className="card bg-base-100 w-96 shadow-xl mx-10 my-5"
+                  className="card bg-base-100 w-xs md:w-96 shadow-xl mx-10 my-5"
                 >
                   <div className="card-body">
                     <h2 className="card-title">{note.title}</h2>

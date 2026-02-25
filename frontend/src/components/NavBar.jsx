@@ -22,7 +22,7 @@ export const NavBar = ({ isLoggedIn, setIsLoggedIn }) => {
   return (
     <>
       <div className="navbar bg-primary flex justify-around">
-        <NavLink to="/" className="btn btn-ghost text-3xl">
+        <NavLink to="/" className="btn btn-ghost text-xl md:text-3xl">
           <PenLine />
           Notes App
         </NavLink>
@@ -41,7 +41,7 @@ export const NavBar = ({ isLoggedIn, setIsLoggedIn }) => {
           </div>
         ) : (
           <button
-            className="btn glass text-lg font-bold"
+            className="btn glass text-sm md:text-xl font-bold"
             onClick={() => {
               navigate("/login_register");
             }}
