@@ -68,7 +68,7 @@ export const DetailsNote = () => {
       await api.put(`/modify/${params.id}`, {
         title: title,
         description: description,
-        until: date ? date.format("YYYY-MM-DDTHH:mm") : null,
+        until: date ? date.toISOString() : null,
       });
 
       navigate("/");

@@ -30,7 +30,7 @@ export const CreateNote = () => {
       await api.post("/create", {
         title: title,
         description: description,
-        until: date ? date.UTC().format("YYYY-MM-DDTHH:mm") : null,
+        until: date ? date.toISOString() : null,
       });
 
       navigate("/");
