@@ -9,7 +9,7 @@ import { useNavigate } from "react-router";
 
 export const CreateNote = () => {
   let navigate = useNavigate();
-  
+
   const [date, setDate] = useState(null);
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState(null);
@@ -30,7 +30,7 @@ export const CreateNote = () => {
       await api.post("/create", {
         title: title,
         description: description,
-        until: date ? date.format("YYYY-MM-DDTHH:mm") : null,
+        until: date ? date.UTC().format("YYYY-MM-DDTHH:mm") : null,
       });
 
       navigate("/");
@@ -38,7 +38,7 @@ export const CreateNote = () => {
       toast.success("Note saved successfully!");
     } catch (error) {
       // Auth
-      if(error.status === 401) {
+      if (error.status === 401) {
         return navigate("/login_register");
       }
 
