@@ -34,7 +34,7 @@ export async function createNote(req, res) {
     let expiration = null
 
     if (until) {
-        expiration = new Date(`${until}`)
+        expiration = new Date(`${until}`).toISOString();
     }
 
     try {
@@ -59,7 +59,7 @@ export async function modifieNote(req, res) {
 
     let expiration = null;
     if (until) {
-        expiration = new Date(`${until}`)
+        expiration = new Date(`${until}`).toISOString();
     } 
 
     try {
